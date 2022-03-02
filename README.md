@@ -1,11 +1,21 @@
-# Vue 3 + Typescript + Vite
+# Vue 3 + Typescript + Vite + Pinia
 
-This template should help get you started developing with Vue 3 and Typescript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+a template consist of Vue 3 Typescript Vite Pinia eslint axios prettier
 
 ## Recommended IDE Setup
 
 - [VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=johnsoncodehk.volar)
 
-## Type Support For `.vue` Imports in TS
+## Intro
 
-Since TypeScript cannot handle type information for `.vue` imports, they are shimmed to be a generic Vue component type by default. In most cases this is fine if you don't really care about component prop types outside of templates. However, if you wish to get actual prop types in `.vue` imports (for example to get props validation when using manual `h(...)` calls), you can enable Volar's `.vue` type support plugin by running `Volar: Switch TS Plugin on/off` from VSCode command palette.
+项目基础由 Vite vue-ts 模板创建 ,使用 vue3 做基础框架,项目全面支持了 Typescript,加入了 `@vitejs/plugin-vue` 来适配不支持 ESM 的浏览器，预设最低支持 chrome 52,项目选择 pinia 来代替 vuex,用 tsx 写了 layout,并且支持了 keepalive,为 axios 也加入了类型返回支持。
+
+`项目作者:Nuno Zheng 952571278@qq.com`
+
+## Log
+
+2022/3/2: - 模板建成上线(未经过项目考研)
+
+## License
+
+MIT 2022-present
