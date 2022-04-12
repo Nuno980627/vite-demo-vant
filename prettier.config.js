@@ -4,8 +4,8 @@ module.exports = {
   semi: false,
   vueIndentScriptAndStyle: true,
   singleQuote: true,
-  trailingComma: 'all',
+  trailingComma: 'none',
   proseWrap: 'never',
   htmlWhitespaceSensitivity: 'strict',
-  endOfLine: 'auto',
+  endOfLine: 'auto'
 }
