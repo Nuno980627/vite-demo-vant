@@ -17,5 +17,7 @@ module.exports = {
       landscapeUnit: 'vw',
       landscapeWidth: 568
     }
-  }
+  },
+  tailwindcss: {},
+  autoprefixer: {}
 }

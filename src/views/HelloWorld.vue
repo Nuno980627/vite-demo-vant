@@ -1,30 +1,3 @@
-<script setup lang="ts">
-  import { ref, onActivated } from 'vue'
-  import { useStore } from '@/store/index'
-  import { storeToRefs } from 'pinia'
-  //pinia
-  //directly get access
-  const store = useStore()
-  const { isAdmin, actionMode } = storeToRefs(store)
-  store.$patch({
-    counter: store.counter + 1,
-    name: 'Abalam',
-  })
-  isAdmin.value = 'ok reactive'
-  store.setAction('action info')
-  //prop
-  // defineProps<{ msg: string }>()
-  //环境变量
-  const count = ref(0)
-  const type = ref('')
-  type.value = import.meta.env.MODE
-  const baseAPI = ref('')
-  baseAPI.value = import.meta.env.VITE_APP_API_BASE_URL
-  //生命周期
-  onActivated(() => {
-    console.log('1235667')
-  })
-</script>
 
 <template>
   <h1>环境变量</h1>
@@ -59,8 +32,41 @@
     Edit
     <code>views/HelloWorld.vue</code> to test hot module replacement.
   </p>
+  <div class="text-[30px] bg-blue-400 text-[#ffffff] m-4 p-0.5 rounded"
+    >TailwindCss v2 jit mode</div
+  >
+  <div>use tailwindcss v2 adapt old device such as android 8 or IOS12</div>
+  <div>enabled jit mode </div>
   <div className="test-postcss">test</div>
 </template>
+<script setup lang="ts">
+  import { ref, onActivated } from 'vue'
+  import { useStore } from '@/store/index'
+  import { storeToRefs } from 'pinia'
+  //pinia
+  //directly get access
+  const store = useStore()
+  const { isAdmin, actionMode } = storeToRefs(store)
+  store.$patch({
+    counter: store.counter + 1,
+    name: 'Abalam',
+  })
+  isAdmin.value = 'ok reactive'
+  store.setAction('action info')
+  //prop
+  // defineProps<{ msg: string }>()
+  //环境变量
+  const count = ref(0)
+  const type = ref('')
+  type.value = import.meta.env.MODE
+  const baseAPI = ref('')
+  baseAPI.value = import.meta.env.VITE_APP_API_BASE_URL
+  //生命周期
+  onActivated(() => {
+    console.log('1235667')
+  })
+</script>
+
 
 <style scoped>
   a {
@@ -79,8 +85,8 @@
     color: #304455;
   }
   .test-postcss {
-    width: 200px;
-    height: 300px;
+    width: 20px;
+    height: 30px;
     color: #42b983;
   }
 </style>
