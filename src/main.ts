@@ -2,7 +2,7 @@ import { createApp } from 'vue'
 import App from './App.vue'
 import router from './router'
 //import './icons/index'
-import './styles/index.css'
+import './styles/tailwind.css'
 import './styles/index.scss'
 
 // import './utils/permission'
