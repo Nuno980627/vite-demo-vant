@@ -16,10 +16,6 @@ a template consist of Vue 3 Typescript Vite Pinia eslint axios prettier
 
 2022/3/2: 
 - 模板建成上线(未经过项目考验，或存在位置问题待完善)  
-2022/4/13
-- 修改eslint 和 prettier 的逗号规则
-- 加入Tailwindcss v2 
-(为兼容老设备选用v2，v3不支持iOS12，安卓8之类的旧设备,开启jit模式优化打包)
 
 ## License
 
