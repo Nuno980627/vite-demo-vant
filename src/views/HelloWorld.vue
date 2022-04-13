@@ -1,4 +1,3 @@
-
 <template>
   <h1>环境变量</h1>
   <h3>type:{{ type }}</h3>
@@ -32,11 +31,6 @@
     Edit
     <code>views/HelloWorld.vue</code> to test hot module replacement.
   </p>
-  <div class="text-[30px] bg-blue-400 text-[#ffffff] m-4 p-0.5 rounded"
-    >TailwindCss v2 jit mode</div
-  >
-  <div>use tailwindcss v2 adapt old device such as android 8 or IOS12</div>
-  <div>enabled jit mode </div>
   <div className="test-postcss">test</div>
 </template>
 <script setup lang="ts">
@@ -49,7 +43,7 @@
   const { isAdmin, actionMode } = storeToRefs(store)
   store.$patch({
     counter: store.counter + 1,
-    name: 'Abalam',
+    name: 'Abalam'
   })
   isAdmin.value = 'ok reactive'
   store.setAction('action info')
@@ -66,7 +60,6 @@
     console.log('1235667')
   })
 </script>
-
 
 <style scoped>
   a {
