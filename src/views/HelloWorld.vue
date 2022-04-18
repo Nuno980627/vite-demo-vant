@@ -32,6 +32,8 @@
     <code>views/HelloWorld.vue</code> to test hot module replacement.
   </p>
   <div className="test-postcss">test</div>
+  <h1>SVG</h1>
+  <svg-icon iconClass="auth" width="66" height="66" />
 </template>
 <script setup lang="ts">
   import { ref, onActivated } from 'vue'
@@ -78,8 +80,8 @@
     color: #304455;
   }
   .test-postcss {
-    width: 20px;
-    height: 30px;
+    width: 2px;
+    height: 3px;
     color: #42b983;
   }
 </style>
