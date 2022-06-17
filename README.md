@@ -18,6 +18,8 @@ a template consist of Vue 3 Typescript Vite Pinia eslint axios prettier
 - 模板建成上线(未经过项目考验，或存在位置问题待完善)  
 ### 2022-4-18
 - 增加SVG模块
+### 2022-6-17
+- css module 代码提示模块加入
 ## License
 
 MIT 2022-present
